@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Emilys+Candy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="heart-love.gif" alt="Loading...">
+    </div>
+
+    <nav class="nav">
+        <div class="logo">❤️</div>
+    </nav>
+    <section class="main">
+
+        <div class="container">
+            <div class="text">
+                <h1>Love Letter Generator<span>.</span></h1>
+
+                <form action="#" id="formContainer">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="nameInput" placeholder="Your Name" required>
+
+                    <label for="style">Choose a style:</label>
+                    <select id="styleSelect">
+                        <option value="jemima">Jemima</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="funny">Funny</option>
+                        <option value="poetic">Poetic</option>
+                    </select>
+                    <button onclick="generateLetter()">Generate Letter</button>    
+                </form>
+                <div id="letter"></div>
+                <button id="goBack" onclick="goBack()">Go Back</button>
+                <button id="shareButton" onclick="shareLetter()">Share</button>
+            </div>
+
+            <div class="image-container">
+                <img src="/love-is-in-the-air-animate.svg" alt="">
+            </div>
+            
+        </div>
+    </section>
+    <audio id="backgroundMusic"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
